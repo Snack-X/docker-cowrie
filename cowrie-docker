@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+cd /home/cowrie/cowrie
+twistd -n -l log/cowrie.log --umask 0077 --pidfile var/run/cowrie.pid cowrie
